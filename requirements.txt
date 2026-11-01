@@ -6,3 +6,4 @@ seaborn
 streamlit
 fastapi
 ipykernel
+plotly
