@@ -251,7 +251,7 @@ def make_gauge(score: float) -> go.Figure:
 
 
 def call_api(payload: dict) -> float:
-    resp = requests.post(f"{API_URL}/predict", json=payload, timeout=15)
+    resp = requests.post(f"{API_URL}/predict", json=payload, timeout=90)
     resp.raise_for_status()
     body = resp.json()
 
